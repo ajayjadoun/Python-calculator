@@ -1,0 +1,43 @@
+print('The modern calculator\n2021')
+#Making the class for making function to call by value
+class calculator():
+       # Making Function for solving the input Given by the user
+       def add(self,x,y):
+              return x+y
+       def sub(self,x,y):
+              return x-y
+       def product(self,x,y):
+              return x*y
+       def divide(self,x,y):
+              return x/y
+# Making the object of the class
+calculator2020=calculator()
+# Making the function for solving the INPUT USER
+def INPUT_USER():
+       #Print the first statement Here:
+       print('Choose the option.\n1.add\n2.sub\n3.product\n4.divide')
+       User_input1=int(input("Enter the value"))
+       User_input2=int(input('Enter the value'))
+       # print('Choose the option.\n1.add\n2.sub\n3.product\n4.divide')
+       response_user=int(input())
+       if response_user==1:
+              #call the function by object of the class
+              print("ADD-",calculator2020.add(User_input1,User_input2))
+              Res=input('Press any button for Taking Again Input ')
+              #Making for go in MAIN VIEW OF CALCULATOR
+              print(INPUT_USER())
+       elif response_user==2:
+              #Call the function by objecting in class
+              print("SUB-",calculator2020.sub(User_input1,User_input2))
+              Res = input('Press any button for Taking Again Input ')
+              print(INPUT_USER())
+       elif response_user==3:
+              print("PRODUCT",calculator2020.product(User_input1,User_input2))
+              Res = input('Press any button for Taking Again Input ')
+              print(INPUT_USER())
+       elif response_user==4:
+              print("DIVIDE",calculator2020.divide(User_input1,User_input2))
+       Res = input('Press any button for Taking Again Input ')
+       print(INPUT_USER())
+
+INPUT_USER()
