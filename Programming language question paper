@@ -1,0 +1,142 @@
+
+import time,random,webbrowser,smtplib
+print('EXAM PAPER-2021\nPYTHON CORE')
+CORRECT_QUESTION=[]
+WRONG_QUESTION=[]
+def question_paper():
+       print("WHO IS FOUNDER OF GO PROGRAMMING LANGUAGE")
+       print("1.ROBERT GRIESEMER\n2.LINKER BELL\n3.VAN DELTA\n4.AUTTHOR P. KARL")
+       question1=int(input())
+       if question1==1:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print("WHO IS FOUNDER OF RUBY PROGRAMMING LANGUAGE")
+
+       print('1.PINKER PANKER\n2.JONKIS MAMIKA\n3.POUL HEYMAN\n4.YUKIHIRO MATSUMOTO')
+       questtion2=int(input())
+       if questtion2==4:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print("WHO IS THE FOUNDER OF JAVA SCRIPT PROGRAMMING LANGUAGE")
+
+       print('1.JAMES GOSLING\n2.BRENDAN EICH\n3.RICHHER FRANKLIN\n4.NIKLAUS WIRTH')
+       question3=int(input())
+       if question3==2:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       # compile("WHO IS FOUNDER OF PYTHON PROGRAMMING LANGUAGE")
+       print("WHO IS FOUNDER OF PYTHON PROGRAMMING LANGUAGE")
+
+       print("1.MICHEAL ANDERSON\n2.PERL KOBE\n3.GUIDO VAN ROSSUM\n4.KEVIN PETER")
+       question4=int(input())
+       if question4==3:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print("WHO IS FOUNDER OF JAVA PROGRAMMING LANGUAGE")
+
+       print('1.JAMES GOSLING\n2.BRENDAN EICH\n3.RICHHER FRANKLIN\n4.NIKLAUS WIRTH')
+       qusetion5=int(input())
+       if qusetion5==1:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print('WHO IS FOUNDER OF PERL PROGRAMMING LANGUAGE')
+
+       print('1.JAMES KARLS\n2.LARRY WALL EICH\n3.RICHHER FRANKLIN\n4.NIKLAUS WIRTH')
+       qusetion6=int(input())
+
+       if qusetion6==2:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print('WHO IS FOUNDER OF C PROGRAMMING LANGUAGE')
+       print('1.JAMES KARLS\n2.LOOK WALL EICH\n3.MORKAL FRANKLIN\n4.DENNIS RITCHIE')
+
+       question7=int(input())
+
+       if question7==4:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print('WHO IS FOUNDER OF C++ PROGRAMMING LANGUAGE')
+       print('1.LOOK HARPERS\n2.WINKER EICH\n3.RICHHER FRANKLIN\n4.BJARNE STROUSTRUP')
+
+
+       question8=int(input())
+
+       if question8==4:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print('WHO IS FOUNDER OF PHP PROGRAMMING LANGUAGE')
+       print('1.RASMUS LERDORF\n2.GOTICHICH.LO\n3.PABLO FRANKLIN\n4.LIMKER J.CORL')
+
+
+
+       question9=int(input())
+
+       if question9==1:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+       print('WHO IS FOUNDER OF C# PROGRAMMING LANGUAGE')
+       print("1.PINKLAL MANNKER\n2.LOONKER WAALS\n3.MICROSOFT CORPORATION\n4.BILL GATES")
+
+
+       question10=int(input())
+       if question10==3:
+              print("GOOD ANSWER")
+              CORRECT_QUESTION.append(1)
+       else:
+              print('WRONG QUESTION')
+              WRONG_QUESTION.append(1)
+       time.sleep(1)
+# RIGHT_ANSWER=
+# WRONG_ANSWER=print(sum(WRONG_QUESTION))
+# PERCENTAGE=RIGHT_ANSWER/100*100
+# print(PERCENTAGE)
+
+def STUDENT_INFO():
+       NAME_STUDENT=str(input("ENTER THE NAME"))
+       CLASS_STUDENT=str(input("ENTER CLASS"))
+       MAIL_ADDRESS=str(input("ENTER THE MAIL ADDRESS"))
+       DATE=str(input("ENTER THE DATE"))
+       print("PAPER WILL START IN 3 SEC..")
+       time.sleep(3)
+       print(question_paper())
+       ALL_INFO = ("STUDENT NAME-{}\nSTUDENT CLASS-{}\nMAIL ADDRESS-{}\nDATE OF EXAM-{}\n" .format(NAME_STUDENT,CLASS_STUDENT,MAIL_ADDRESS,DATE))
+       print(ALL_INFO)
+       print("CORRECT ANSWER",sum(CORRECT_QUESTION))
+       print("WRONG QUESTION",sum(WRONG_QUESTION))
+STUDENT_INFO()
